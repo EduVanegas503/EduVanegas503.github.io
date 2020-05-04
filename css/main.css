@@ -1,0 +1,333 @@
+body{
+    background-color: gray;
+    widows: 100%;
+  background-image: url(https://data.1freewallpapers.com/download/cave-tunnel-light-bright-art.jpg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: auto;
+}
+
+#contenedorTitulo{
+    width: 400px;
+    margin-top: 200px;
+    animation-name: shake;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    display: none;
+}
+
+@-webkit-keyframes shake{
+      50%{ transform: rotate(10deg);}
+}
+
+#contenedorTitulo #contenedorTxtV{
+    width: 200px;
+    height: 70px;
+    border-radius: 120px 0px 120px 0px;
+
+}
+
+#contenedorTitulo #contenedorTxtV #V{
+    font-size: 60px;
+    transform: rotate(-10deg);
+    background-color: violet;
+    border-radius: 10px 10px 10px 10px;
+    border: 2px silver solid;
+    box-shadow: -10px -10px 20px 2px violet;
+}
+
+#contenedorTitulo #contenedorTxtR{
+    margin-top: -30px;
+    margin-left: 120px;
+    width: 200px;
+    height: 70px;
+    border-radius:0px 120px 0px 120px;
+}
+
+#contenedorTitulo #contenedorTxtR #R{
+    text-align: center;
+    font-size: 60px;
+    transform: rotate(10deg);
+    background-color: red;
+    border: 2px silver solid;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 10px 10px 20px 2px red;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#seleccionar{
+    margin-top: 260px;
+    width: 300px;
+    height: 140px;
+    padding-top: 10px;
+    display: none;
+    border-radius: 40px 40px 40px 40px;
+}
+
+
+#seleccionar:target{
+    display: block;
+    position: center;
+}
+
+#seleccionar #vr1{
+    background-color: purple;
+    width: 250px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#seleccionar #vr1 a:hover{
+    color: white;
+}
+
+#seleccionar #vr2{
+    background-color: red;
+    width: 250px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#seleccionar #vr2 a:hover{
+    color: white;
+}
+
+#formPlayer{
+    width: 300px;
+    height: 200px;
+    border: 2px white solid;
+    background-color: black;
+}
+
+#jugadores{
+    display: none;
+}
+
+#jugadores p{
+    color: white;
+}
+
+#jugadores input{
+    margin-top: 10px;
+    background-color: black;
+    color: purple;
+    border: 2px darkcyan solid;
+}
+
+#jugadores:target{
+    margin-top: 200px;
+    display: block;
+}
+
+#contenedorTitulo:target{
+    display: block;
+}
+
+#inicio h1 a{
+    border: 2px purple solid;
+    color: white;
+    margin-top: -190px;
+    background-color: black;
+}
+
+
+#ventana{
+    position: absolute;
+    display: none;
+    width: 86%;
+    height: 77.5%;
+    border: 2px aqua solid;
+    background-color: black;
+    margin-left: 8%;
+    box-sizing: border-box;    
+}
+
+
+
+#ventana:target{
+    display: block;
+}
+
+
+
+#ventana #posPlayers{
+    border-radius: 10px 10px 10px 10px;
+    position: absolute;
+    background-color: darkslateblue;
+    width: 38%;
+    height: 99.5%;
+    border: 2px black dashed;
+
+}
+
+#ventana #posPlayers h1{
+   text-align: left;
+   margin-bottom: -10px;
+   color: purple;
+   background-color: black;
+   border-radius: 10px 10px 10px 10px;
+}
+#ventana #inicioGame h1 a{
+    border: 2px purple solid;
+    color: white;
+    background-color: black;
+    margin-left: 76%;
+}
+
+#ventana #posPlayers h2{
+    text-align: left;
+    margin-bottom: -10px;
+ }
+
+#VRGame{
+    position: absolute;
+    margin-left: 42%;
+    width: 240px;
+    padding-top: 60px;
+}
+
+#VRGame p{
+    position: absolute;
+}
+#VRGame #turno{
+    font-size: 20px;
+    position: absolute;
+    margin-top: -70px;
+    margin-left: 24%;
+    color: gold;
+}
+
+#VRGame #reto{
+    width: 120px;
+    height: 120px;
+    background-color: purple;
+    border-radius: 0px 0px 120px 0px;
+    margin-left: 120px;
+}
+
+#VRGame #reto #labelR{
+    color: white;
+    font-size: 36px;
+    padding-left: 10px;
+    padding-top: -10px;
+}
+
+#VRGame #verdad{
+    margin-top: -120px;
+    margin-right: 120px;
+    width: 120px;
+    height: 120px;
+    background-color: cyan;
+    border-radius: 0px 0px 0px 120px;
+}
+
+#VRGame #verdad #labelV{
+    color: black;
+    font-size: 32px;
+    padding-left: 14px;
+    padding-top: 6px;
+}
+
+#VRGame #reto1{
+    width: 120px;
+    height: 120px;
+    background-color: purple;
+    border-radius: 120px 0px 0px 0px;
+    margin-left: -120px;
+}
+
+#VRGame #reto1 #labelR1{
+    color: white;
+    font-size: 36px;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+#VRGame #verdad1{
+    margin-top: -120px;
+    margin-right: 120px;
+    width: 120px;
+    height: 120px;
+    background-color: cyan;
+    border-radius: 0px 120px 0px 0px;
+    margin-left: 120px;
+}
+
+#VRGame #verdad1 #labelV1{
+    color: black;
+    font-size: 32px;
+    padding-left: 2px;
+    padding-top: 16px;
+}
+
+#VRGame #flecha{       /**/
+    /*clip-path: polygon(10px 10px /*vertice 1 arriba a la izquierda, 20px 20px/*vertice 1 abajo a la izquierda,100px 40px, 100px 10px);*/
+    /* una X   clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);*/
+    clip-path: polygon(0% 0%, 50% 98%, 100% 0%);
+    background-color: red;
+    border-radius: 10px 10px 0px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 2px black solid;
+    margin-left: 94px;
+    margin-top: -26px;
+    transition: all 2s;
+}
+
+#VRGame input{
+    margin-top: 20px;
+    background-color: black;
+    color: purple;
+    font-size: 20px;
+    width: 80px;
+    height: 30px;
+}
+
+
+#avisos{  
+    position: absolute;  
+    display: none;
+    margin-left: 8%;
+    width: 86%;
+    height: 77.5%;
+    background-color: black;
+    border: 2px dashed darkgoldenrod;
+}
+
+#avisos #which{
+    color: white;
+}
+
+#avisos #parraRV{
+    color: white;
+    font-size: 20px;
+}
+
+
+#avisos #cumplido{
+    background-color: green;
+    color: lightgray;
+    border: 2px silver solid;
+    font-size: 40px;
+    width: 70px;
+    height: 60px;
+    position: absolute;
+    margin-top: 220px;
+    margin-left: -110px;
+}
+
+#avisos #fallido{
+    position: absolute;
+    background-color: red;
+    color: black;
+    border: 2px silver solid;
+    font-size: 40px;
+    width: 70px;
+    height: 60px;
+    margin-top: 220px;
+    margin-left: 50px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta lang="es">
+<html>
+    <head>
+     <title>Verdad o Reto</title>
+     <link rel="stylesheet" href="css/main.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <center>
+           <a href="#seleccionar"> <div id="contenedorTitulo">
+      <div id="contenedorTxtV">
+          <h1 id="V">Verdad</h1>
+      </div>
+      <div id="contenedorTxtR">
+        <h1 id="R">Reto</h1>
+      </div>
+      </div>
+      </a>
+      
+      <div id="seleccionar">
+      <div id="vr1"><h1><a href="#jugadores">Versión Normal </a></h1></div>
+      <div id="vr2"><h1><a href="#jugadores">Versión Hot</a></h1></div>
+      </div>
+      <div id="jugadores">
+        <div id="inicio"><h1><a href="#contenedorTitulo">Inicio</a></h1></div>
+        <div id="formPlayer">
+          <p>Ingresa los nombres de los participantes</p>
+          <form id="Players">
+            <input type="text" placeholder="Player 1" value="" id="p1" required="" maxlength="7" minlength="3">
+            <br>
+            <input type="text" placeholder="Player 2" value="" id="p2" required="" maxlength="7" minlength="3">
+          </form>
+          <div id="PlusQuit">
+              <input type="button" value="Agregar" id="add">&nbsp &nbsp<input type="button" value="Quitar" id="remove">
+              <br><a href="#ventana"><input type="button" value="Jugar!" id="play"></a>
+          </div>
+        </div>
+      </div>
+      <div  id="ventana">
+        
+        <div id="posPlayers">
+        <h1 id="nameP1"></h1><h2 id="scoreP1"></h2>
+        <h1 id="nameP2"></h1><h2 id="scoreP2"></h2>
+        <h1 id="nameP3"></h1><h2 id="scoreP3"></h2>
+        <h1 id="nameP4"></h1><h2 id="scoreP4"></h2>
+        <h1 id="nameP5"></h1><h2 id="scoreP5"></h2>
+        <h1 id="nameP6"></h1><h2 id="scoreP6"></h2>
+        <h1 id="nameP7"></h1><h2 id="scoreP7"></h2>
+        <h1 id="nameP8"></h1><h2 id="scoreP8"></h2>
+       </div>
+      <div id="inicioGame"><h1><a href="#contenedorTitulo">Inicio</a></h1></div>
+       <div id="VRGame"> 
+         <div id="turno">
+          <h3></h3>
+        </div>
+        <div id="reto1"><p id="labelR1">Reto</p></div>
+        <div id="verdad1"><p id="labelV1">Verdad</p></div>
+        <div id="flecha"></div>
+        <div id="reto"><p id="labelR">Reto</p></div>
+       <div id="verdad"><p id="labelV">Verdad</p></div>
+       <input type="button" value="Girar" id="girar">
+       </div>
+       </div>
+       <div id="avisos">
+        <h1 id="which"></h1>
+        <p id="parraRV"></p>
+        <input type="button" value="✓" id="cumplido"><input type="button" value="X" id="fallido">
+      </div>
+      </center>
+      <script src="js/funcionesVRGame.js"></script>
+    </body>
+    </html>
