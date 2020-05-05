@@ -68,6 +68,9 @@ var game = 0;
 
 window.onload = function(){
     tit.style.display = "block";
+    if(game == 0){
+        this.tit.style.display= "none";
+    }
 }
 
 tit.onclick = function(){
@@ -114,6 +117,7 @@ start.onclick =function namePlayers(){
         thename.textContent =  " P"+thenum+":"+theplayer.value+" ";
         thename.style.marginTop= 10+"px";
         thename.style.fontSize= 30+"px";
+        thename.style.padding = 5+"px";
         if(theplayer.value == ""){
             thename.textContent = "";
         }
