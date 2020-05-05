@@ -22,10 +22,16 @@ body{
       50%{ transform: rotate(10deg);}
 }
 
-@media screen and (max-width: 100%){
+@media screen and (max-width: 300px){
     body{
-        width: auto;
+        width: 100%;
     }
+}
+
+@media screen and (min-width: 100px){
+    body{
+        width: 100%;
+    };
 }
 
 #contenedorTitulo #contenedorTxtV{
