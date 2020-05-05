@@ -69,7 +69,7 @@ var game = 0;
 window.onload = function(){
     tit.style.display = "block";
     if(game == 0){
-        this.tit.style.display= "none";
+     tit.style.display= "none";
     }
 }
 
@@ -108,24 +108,27 @@ iniHome.onclick = function(){
 }
 
 start.onclick =function namePlayers(){
-       
+
     for(var p=0;p<num.length;p++){
         var thenum = num[p];
         var theplayer =  n[p];
        var thename = pname[p];
-        var thescore = 0;
         thename.textContent =  " P"+thenum+":"+theplayer.value+" ";
         thename.style.marginTop= 10+"px";
         thename.style.fontSize= 30+"px";
-        thename.style.padding = 5+"px";
+        thename.style.marginTop = -2+"px";
+
+       
         if(theplayer.value == ""){
             thename.textContent = "";
+            
         }
         if(theplayer.value != ""){
         thename.style.border= 2+"px white solid";
+        thename.style.padding = 5+"px";
         }
         
-    }  
+    }   
     if(game==0){
         alert("Selecciona una versión");
         winMode.style.display="block";
@@ -145,6 +148,7 @@ start.onclick =function namePlayers(){
     turn.style.marginTop = -40+"px";
     turn.style.fontSize = 20+"px";
     }
+
     console.log(game)
 }
 
@@ -393,26 +397,29 @@ iniGame.onclick = function(){
     tit.style.display = "block";
 }
 
+var nameTurn=n[y];
+var thenameT = nameTurn.value
+
 function ruleta(){
     grados = Math.floor(Math.random()*360);
     rul.style.transform = "rotate("+ grados + "deg)";
     console.log(grados);
     switch (true) {
         case grados <= 360 && grados >= 269:
-           toco.textContent="Reto:"
+           toco.textContent="Reto:";
            retos()
         break;  
         case   grados <=268 && grados >=180:
-            toco.textContent ="Verdad:"
+            toco.textContent ="Verdad:";
             verdades();
         break; 
         case grados <=179 && grados >=93 :
-            toco.textContent="Reto:"
+            toco.textContent="Reto:";
             retos()
         break;
         case grados <=92 && grados >=0: 
     
-        toco.textContent ="Verdad:"
+        toco.textContent ="Verdad:";
         verdades(); 
     }
     if(game==0){
@@ -434,7 +441,6 @@ function ruleta(){
 spin.addEventListener("click",ruleta)
 
 var thescoreR = 0;
-var nameTurn=n[y];
 var thenewRName = pname[y]
 
 mIt.onclick = function hecho(){

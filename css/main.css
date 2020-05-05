@@ -205,7 +205,7 @@ a{
     margin-right: 98px;
     width: 120px;
     height: 120px;
-    background-color: red;
+    background-color: darkorchid;
     border-radius: 0px 0px 120px 0px;
     margin-left: 120px;
 }
@@ -222,7 +222,7 @@ a{
     margin-right: 120px;
     width: 120px;
     height: 120px;
-    background-color: white;
+    background-color: cyan;
     border-radius: 0px 0px 0px 120px;
 }
 
@@ -236,7 +236,7 @@ a{
     margin-bottom:-120px;
     width: 120px;
     height: 120px;
-    background-color: blue;
+    background-color: darkorchid;
     border-radius: 120px 0px 0px 0px;
     margin-left: -120px;
 }
@@ -335,85 +335,66 @@ a{
 
 
 @media screen and (max-width: 180px){
-    body{
-        width: 100%;
+    #VRGame #verdad{
+        margin-top: -80px;
+        margin-right: 80px;
+        width: 80px;
+        height: 80px;
+        background-color: cyan;
+        border-radius: 0px 0px 0px 120px;
     }
-        #VRGame #reto{
-            margin-right: 98px;
-            width: 80px;
-            height: 80px;
-            background-color: darkorchid;
-            border-radius: 0px 0px 120px 0px;
-            margin-left: 120px;
-        }
-        
-        #VRGame #reto #labelR{
-            color: white;
-            font-size: 26px;
-            padding-left: 10px;
-            padding-top: -10px;
-        }
-        
-        #VRGame #verdad{
-            margin-top: -80px;
-            margin-right: 80px;
-            width: 80px;
-            height: 80px;
-            background-color: cyan;
-            border-radius: 0px 0px 0px 120px;
-        }
-        
-        #VRGame #verdad #labelV{
-            color: black;
-            font-size: 26px;
-            padding-left: 6px;
-        }
-        
-        #VRGame #reto1{
-            margin-bottom:-80px;
-            margin-right: -40px;
-            width: 80px;
-            height: 80px;
-            background-color: darkorchid;
-            border-radius: 120px 0px 0px 0px;
-            margin-left: -120px;
-        }
-        
-        #VRGame #reto1 #labelR1{
-            color: white;
-            font-size: 36px;
-            padding-left: 30px;
-            padding-top: 10px;
-        }
-        
-        #VRGame #verdad1{
-            margin-right: 120px;
-            width: 80px;
-            height: 80px;
-            background-color: cyan;
-            border-radius: 0px 120px 0px 0px;
-            margin-left: 120px;
-        }
-        
-        #VRGame #verdad1 #labelV1{
-            color: black;
-            font-size: 32px;
-            padding-left: 2px;
-            padding-top: 16px;
-        }
-        
-        #VRGame #flecha{       /**/
-            /*clip-path: polygon(10px 10px /*vertice 1 arriba a la izquierda, 20px 20px/*vertice 1 abajo a la izquierda,100px 40px, 100px 10px);*/
-            /* una X   clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);*/
-            clip-path: polygon(0% 0%, 50% 98%, 100% 0%);
-            background-color: red;
-            border-radius: 10px 10px 0px;
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            border: 2px black solid;
-            margin-left: 94px;
-            margin-top: -26px;
-            transition: all 2s;
-        }
+    
+    #VRGame #verdad #labelV{
+        color: black;
+        font-size: 26px;
+        padding-left: 6px;
+    }
+    
+    #VRGame #reto1{
+        margin-bottom:-80px;
+        margin-right: -40px;
+        width: 80px;
+        height: 80px;
+        background-color: darkorchid;
+        border-radius: 120px 0px 0px 0px;
+        margin-left: -120px;
+    }
+    
+    #VRGame #reto1 #labelR1{
+        color: white;
+        font-size: 36px;
+        padding-left: 30px;
+        padding-top: 10px;
+    }
+    
+    #VRGame #verdad1{
+        margin-right: 120px;
+        width: 80px;
+        height: 80px;
+        background-color: cyan;
+        border-radius: 0px 120px 0px 0px;
+        margin-left: 120px;
+    }
+    
+    #VRGame #verdad1 #labelV1{
+        color: black;
+        font-size: 32px;
+        padding-left: 2px;
+        padding-top: 16px;
+    }
+    
+    #VRGame #flecha{       /**/
+        /*clip-path: polygon(10px 10px /*vertice 1 arriba a la izquierda, 20px 20px/*vertice 1 abajo a la izquierda,100px 40px, 100px 10px);*/
+        /* una X   clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);*/
+        clip-path: polygon(0% 0%, 50% 98%, 100% 0%);
+        background-color: red;
+        border-radius: 10px 10px 0px;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border: 2px black solid;
+        margin-left: 109px;
+        margin-top: -12px;
+        transition: all 2s;
+    }
     }
