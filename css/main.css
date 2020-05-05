@@ -1,3 +1,4 @@
+
 body{
     background-color: gray;
     widows: 100%;
@@ -19,6 +20,12 @@ body{
 
 @-webkit-keyframes shake{
       50%{ transform: rotate(10deg);}
+}
+
+@media screen and (max-width: 100%){
+    body{
+        width: auto;
+    }
 }
 
 #contenedorTitulo #contenedorTxtV{
