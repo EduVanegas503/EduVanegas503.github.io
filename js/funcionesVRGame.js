@@ -316,10 +316,10 @@ function retos(){
     else if(parra.textContent =="Lamer el dedo gordo del pie de"){
         parra.textContent = "Lamer el dedo gordo del pie de "+ ranName();
     }
-}
+    }
     if(game==2){ ranName();
         var retoRan = Math.floor(Math.random()*retoH.length);
-        parra.textContent = retoN[retoRan];
+        parra.textContent = retoH[retoRan];
     if(parra.textContent=="Darle un beso a"){
         parra.textContent= "Darle un beso a "+ranName()
     }
