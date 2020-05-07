@@ -67,9 +67,11 @@ var x = 2;
 var game = 0;
 
 window.onload = function(){
-    tit.style.display = "block";
-    if(game == 0){
-     tit.style.display= "none";
+    if(game <1 && tit.style.display == "none"){
+       tit.style.display = "block";
+    }
+    if(game > 0){
+        this.tit.style.display = "none";
     }
 }
 
