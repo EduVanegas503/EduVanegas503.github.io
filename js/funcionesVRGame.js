@@ -66,21 +66,30 @@ score8=0;
 var x = 2;
 var game = 0;
 
-window.onload = function(){
-    if(game >= 0  && tit.style.display == "block"){
-        tit.style.display = "none";
-    }
-}
+
 
 tit.onclick = function(){
     winMode.style.display = "block";
     tit.style.display = "none";
 }
 
+window.onload = function(){
+    iniHome.style.display = "none";
+    winMode.style.display = "none";
+    winForm.style.display ="none";
+    winPlayers.style.display = "none";
+    pvp.style.display ="none";
+    tit.style.display = "block";
+    winGame.style.display = "none";
+}
+
 function gameType1(){
     game=1; 
     if(game>0){
         winMode.style.display="none";
+        pvp.style.display = "block";
+        winForm.style.display = "block";
+        iniHome.style.display =  "block"
     }
 }
 mode1.addEventListener("click",gameType1);
@@ -89,6 +98,9 @@ function gameType2(){
     game=2;
     if(game>0){
         winMode.style.display="none";
+        pvp.style.display = "block";
+        winForm.style.display = "block";
+        iniHome.style.display =  "block"
     }
 }
 mode2.addEventListener("click",gameType2);
@@ -107,7 +119,9 @@ iniHome.onclick = function(){
 }
 
 start.onclick =function namePlayers(){
-
+     iniHome.style.display = "none";
+     winForm.style.display = "none";
+     pvp.style.display = "none";
     for(var p=0;p<num.length;p++){
         var thenum = num[p];
         var theplayer =  n[p];

@@ -13,7 +13,7 @@ body{
     animation-duration: 4s;
     animation-delay: 1s;
     animation-iteration-count: infinite;
-    display: none;
+    display: block;
 }
 
 @keyframes shake{
@@ -69,11 +69,6 @@ a{
 }
 
 
-#seleccionar:target{
-    display: block;
-    position: center;
-}
-
 #seleccionar #vr1{
     background-color: purple;
     width: 270px;
@@ -94,6 +89,10 @@ a{
     color: white;
 }
 
+#jugadores{
+    display: none;
+}
+
 #formPlayer{
     width: 300px;
     height: 200px;
@@ -101,9 +100,10 @@ a{
     background-color: black;
 }
 
-#jugadores{
-    display: none;
+#jugadores:target{
+    display: block;
 }
+
 
 #jugadores p{
     color: white;
@@ -114,11 +114,6 @@ a{
     background-color: black;
     color: purple;
     border: 2px darkcyan solid;
-}
-
-#jugadores:target{
-    margin-top: 200px;
-    display: block;
 }
 
 #contenedorTitulo:target{
@@ -143,13 +138,6 @@ a{
     margin-left: 8%;
     box-sizing: border-box;    
 }
-
-
-
-#ventana:target{
-    display: block;
-}
-
 
 
 #ventana #posPlayers{
